@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  bookmark_db:
+    image: postgres:latest
+    container_name: postgres-bookmark-container
+    ports:
+      - "5432:5432"
+    volumes:
+      - bookmark_data:/var/lib/postgresql/data
+    env_file:
+      - .env
+
+volumes:
+  bookmark_data:
