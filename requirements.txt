@@ -5,3 +5,7 @@ markdown~=3.5.1
 Pillow
 sqlparse
 asgiref
+social-auth-app-django
+django-extensions
+werkzeug
+pyOpenSSL
